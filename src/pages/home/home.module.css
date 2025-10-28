@@ -1,0 +1,582 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+
+  /*overflow: hidden;*/
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #ffaf6d, #ffcc80);
+  color: #7d080c;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #8d0707;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #540101;
+}
+
+
+/* Hero Section */
+.hero {
+  background: url("../../assets/tempel_header_one.png") no-repeat center center;
+  height: 100vh;
+  /*position: relative;*/
+  background-size: contain;
+  background-color: #4a0303;
+  background-position: center;
+}
+
+.overlay {
+  /*background-color: rgba(100, 0, 0, 0.6); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.heroContent {
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  padding-right: 150px;
+}
+
+.heroContent h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background-color: #ffaf6d;
+  color: #4a2c00;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #ffcc80;
+}
+
+
+/* ABOUT SECTION */
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #fff8e1;
+  gap: 40px;
+}
+
+.aboutContent {
+  flex: 1;
+  color: #3b3b3b;
+  text-align: center;
+}
+
+.aboutContent h2 {
+  font-size: 2.5rem;
+  color: #800000;
+  margin-bottom: 50px;
+}
+
+.aboutContent p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #2e3d2f;
+}
+
+.readMoreBtn {
+  background-color: #800000;
+  color: #fff8e1;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+}
+
+.readMoreBtn:hover {
+  background-color: #4a0303;
+}
+
+.aboutImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImage img {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Darshan Section */
+.darshanSection {
+  background: url("../../assets/darshan_tempel.png") no-repeat center center/cover;
+  padding: 30px 60px;
+  padding-left: 170px;
+  text-align: center;
+  color: #fff;
+  background-color: #013220;
+}
+
+.darshanSection h2 {
+  font-size: 2rem;
+  color: #ffaf6d;
+  margin-bottom: 50px;
+}
+
+.darshanCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  background-color: rgba(255, 248, 225, 0.15);
+  border-radius: 12px;
+  padding: 25px 20px;
+  max-width: 300px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffeecb;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.bookBtn {
+  margin-top: 30px;
+  background-color: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookBtn:hover {
+  background-color: #fd0543;
+}
+
+
+/* EVENTS SECTION */
+.eventsSection {
+  background-color: #efece4;
+  padding: 30px 60px;
+  padding-bottom: 60px;
+}
+
+.eventsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eventsTop h2 {
+  font-size: 2rem;
+  color: #556b2f;
+}
+
+.eventArrows {
+  display: flex;
+  gap: 1rem;
+}
+
+.arrow {
+  background-color: #7d080c;
+  color: #fff8e1;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #a51717;
+}
+
+.eventSlider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.eventTrack {
+  display: flex;
+  gap: 1.5rem;
+  /*transition: transform 0.6s ease-in-out; */
+}
+
+.eventCard {
+  flex: 0 0 calc(25% - 1rem);
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  text-align: left;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px #62793b;
+  /*transition: transform 0.3s ease; */
+}
+
+.eventCard:hover {
+  background-color: rgba(255, 248, 225, 0.85);
+}
+
+.eventCard img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.eventCard h3 {
+  font-size: 1.2rem;
+  color: #6b8e23;
+  margin-bottom: 0.5rem;
+}
+
+.eventCard p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.knowBtn {
+  margin-top: 30px;
+  background-color: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.knowBtn:hover {
+  background-color: #fd0543;
+}
+
+
+/* SEVA SECTION */
+.sevaSection {
+  position: relative;
+  background: url("../../assets/sevaa_temple.jpg") no-repeat center center/cover;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 8%;
+}
+
+.sevaContent {
+  box-sizing: border-box;
+  background-color: rgba(85, 107, 47, 0.75); 
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  width: 40%;
+  color: #fff;
+  max-width: 40%; 
+  margin-right: 15rem;        
+  color: #fff;
+  overflow: hidden;
+}
+
+.sevaContent h2 {
+  color: #8b0000;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.sevaContent ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.sevaContent li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+} 
+
+
+/* Donation Section
+.donationSection {
+  background-color: #800000; 
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donationContent {
+  max-width: 700px;
+}
+
+.donationContent h2 {
+  color: #fff8e1; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donationContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.donateBtn {
+  background-color: #fff8e1; 
+  color: #800000; 
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donateBtn:hover {
+  background-color: #ffefb0;
+}  */
+
+
+/* Donation Section */
+.donationSection {
+  background-color: #fffaf5; 
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.donationTitle {
+  font-size: 2.2rem;
+  color: #145944; 
+  margin-bottom: 50px;
+}
+
+.donationCards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.donationCard {
+  background: transparent;
+  max-width: 350px;
+  text-align: center;
+}
+
+.donationCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(139, 128, 0, 0.2);
+}
+
+.donationCard h3 {
+  color: #800000; 
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  font-size: larger;
+}
+
+.donationCard h3:hover {
+  color: crimson;
+}
+
+.donationCard p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.donateButton {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #800000; 
+  color: #fffaf5; 
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donateButton:hover {
+  background-color: #a52a2a; 
+}
+
+
+/* Footer Section */
+.footer {
+  background-color: #0b3d2e;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerSection h3 {
+  color: #f5deb3; 
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footerSection p,
+.footerSection ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footerSection ul li:hover {
+  color: #f5deb3;
+}
+
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid #f5deb3;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+
+
+
+/* ✅ Responsive (for tabs) */
+@media (max-width: 768px) {
+  .donationCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+
+/* ✅ Responsive (for mobile screens) */
+@media (max-width: 480px) {
+
+  .footerContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footerSection {
+    margin-bottom: 20px;
+  }
+
+  .footerSection ul li {
+    margin-bottom: 6px;
+  }
+
+  .footerBottom {
+    font-size: 0.8rem;
+  }
+
+  /* Donation Section */
+
+  .donationCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
