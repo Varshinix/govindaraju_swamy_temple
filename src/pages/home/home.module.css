@@ -371,50 +371,6 @@ body {
 }
 
 
-/* Donation Section
-.donationSection {
-  background-color: #800000; 
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.donationContent {
-  max-width: 700px;
-}
-
-.donationContent h2 {
-  color: #fff8e1; 
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.donationContent p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: #ffffff;
-}
-
-.donateBtn {
-  background-color: #fff8e1; 
-  color: #800000; 
-  border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.donateBtn:hover {
-  background-color: #ffefb0;
-}  */
-
-
 /* Donation Section */
 .donationSection {
   background-color: #fffaf5;
@@ -631,58 +587,6 @@ body {
     font-size: 0.9rem;
   }
 
-  /* Event Section 
-  .eventsSection {
-    padding: 20px;
-  }
-
-  .eventsTop {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .eventsTop h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  .eventArrows {
-    gap: 0.5rem;
-  }
-
-  .arrow {
-    padding: 0.6rem 0.9rem;
-    font-size: 1rem;
-  }
-
-  .eventTrack {
-    gap: 1rem;
-  }
-
-  .eventCard {
-    flex: 0 0 100%;
-    padding: 1rem;
-    box-shadow: 0 3px 8px #62793b;
-  }
-
-  .eventCard img {
-    height: 200px;
-  }
-
-  .eventCard h3 {
-    font-size: 1.1rem;
-  }
-
-  .eventCard p {
-    font-size: 0.9rem;
-  }
-
-  .knowBtn {
-    padding: 10px 25px;
-    font-size: 0.9rem;
-    margin-top: 20px;
-  } */
 
   /* EVENTS SECTION */
   .eventsSection {
@@ -884,23 +788,34 @@ body {
     transition: all 0.3s ease;
   }
 
+  .navbar {
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .navLinks {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0;
     background: #fff8f0;
-    width: 100%;
+    /*width: 100%;
+    right: 0; */
     padding: 20px 0;
     text-align: center;
     gap: 20px;
     border-top: 2px solid #8d0707;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100vw; 
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
   }
 
   .navLinks.active {
     display: flex;
+    overflow-x: hidden;
   }
 
   .navLinks a {
