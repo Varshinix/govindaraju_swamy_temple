@@ -1,6 +1,7 @@
 
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./home.module.css";
+import { useNavigate } from "react-router-dom";
 import aboutImg from "../../assets/about_tempel.jpg";
 import event1 from "../../assets/event1.jpg";
 import event2 from "../../assets/event2.jpg";
@@ -14,6 +15,10 @@ import festivalImg from "../../assets/festivalss.jpg";
 
 
 export default function Home() {
+
+    const navigate = useNavigate();
+
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const visibleCards = 4;
@@ -66,17 +71,69 @@ export default function Home() {
 
     return (
         <>
-            {/* Navbar */}
+            {/* Navbar 
             <nav className={styles.navbar}>
                 <div className={styles.logo}>🛕 Govindaraja Swamy Temple</div>
                 <ul className={styles.navLinks}>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Darshan</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Seva</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/");
+                    }}>Home</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/about");
+                    }}>About</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/darshan");
+                    }}>Darshan</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/events");
+                    }}>Events</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/seva");
+                    }}>Seva</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/donate");
+                    }}>Donate</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/contact");
+                    }}>Contact</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/login");
+                    }}>Login</a></li>
+                </ul>
+            </nav>  */}
+            <nav className={styles.navbar}>
+                <div className={styles.logo}>🛕 Govindaraja Swamy Temple</div>
+
+                {/* Hamburger (only shows on mobile) */}
+                <div
+                    className={styles.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <ul
+                    className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}
+                    onClick={() => setMenuOpen(false)} // closes menu when any link is clicked
+                >
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/"); }}>Home</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/about"); }}>About</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/darshan"); }}>Darshan</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/events"); }}>Events</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/seva"); }}>Seva</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/donate"); }}>Donate</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}>Contact</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/login"); }}>Login</a></li>
                 </ul>
             </nav>
 
@@ -110,7 +167,7 @@ export default function Home() {
                         carved pillars, colorful mandapams, and a peaceful sanctum for uninterrupted darshan. Learn more about the
                         temple history, deity, and traditions on the About page.
                     </p>
-                    <button className={styles.readMoreBtn}>Read More</button>
+                    <button className={styles.readMoreBtn} onClick={() => navigate("/about")}>Read More</button>
                 </div>
 
                 <div className={styles.aboutImage}>
@@ -302,10 +359,9 @@ export default function Home() {
                 </div>
 
                 <div className={styles.footerBottom}>
-                    <p>© 2025 Sri Govindaraja Swamy | All Rights Reserved</p>
+                    <p>© 2025 Sri Govindaraja Swamy Devasthanam Foundation | All Rights Reserved | Future Invo Solutions</p>
                 </div>
             </footer>
-
 
 
         </>

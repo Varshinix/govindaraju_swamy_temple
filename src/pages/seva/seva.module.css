@@ -1,0 +1,429 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: linear-gradient(90deg, #ffaf6d, #ffcc80);
+    color: #7d080c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #8d0707;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover {
+    color: #540101;
+}
+
+
+/* Hero */
+.sevaSection {
+    background-color: #fff7e6;
+    padding: 40px 80px;
+}
+
+.heading {
+    text-align: center;
+    color: #800000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.sevaContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    margin-left: 100px;
+}
+
+.image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 1.1;
+    color: #222;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.list li {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #800000;
+    font-weight: 600;
+}
+
+
+
+/* Weekly Seva */
+.weeklySevaSection {
+    background-color: #fffcf3;
+    padding: 40px 80px;
+}
+
+.heading {
+    text-align: center;
+    color: #155e2d;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text {
+    flex: 1;
+    color: #000;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #800000;
+    font-weight: 600;
+}
+
+/*.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+
+/* Periodic Seva */
+.periodicSevaSection {
+    background-image: url("../../assets/seva_two.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    position: relative;
+    color: #000;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+    color: #800000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.periodicSevaContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 1;
+}
+
+.text {
+    flex: 1.1;
+    color: #155e2d;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.list li {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #800000;
+    font-weight: 600;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+.image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Arjitha Seva */
+.arjithaSevaSection {
+    background-color: #fffcf3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.heading {
+    color: #0b3d2e;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.text {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #222;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.list li {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #800000;
+    font-weight: 600;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #0b3d2e;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection h3 {
+    color: #f5deb3;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footerSection p,
+.footerSection ul {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footerSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerSection ul li {
+    margin-bottom: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footerSection ul li:hover {
+    color: #f5deb3;
+}
+
+.footerBottom {
+    text-align: center;
+    border-top: 1px solid #f5deb3;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+
+@media (max-width: 480px) {
+
+    /* Hero */
+    .sevaContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .image {
+        max-width: 250px;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+
+    .heading {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    /* DAILY SEVA */
+    .sevaSection {
+        padding: 30px 20px;
+    }
+
+    .sevaContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .imageContainer {
+        margin: 0;
+        max-width: 200px;
+    }
+
+    .text {
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    /* WEEKLY SEVA */
+    .weeklySevaSection {
+        padding: 30px 20px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .weeklySevaSection .text {
+        text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* PERIODIC SEVA */
+    .periodicSevaSection {
+        padding: 40px 20px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .periodicSevaContent {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .periodicSevaContent .text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .periodicSevaSection .imageContainer {
+        margin: 0;
+        max-width: 250px;
+    }
+
+    /* ARJITHA SEVA */
+    .arjithaSevaSection {
+        padding: 30px 20px;
+    }
+
+    .arjithaSevaSection .text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .list {
+        margin-top: 10px;
+    }
+
+    .list li {
+        margin-bottom: 10px;
+    }
+
+
+}

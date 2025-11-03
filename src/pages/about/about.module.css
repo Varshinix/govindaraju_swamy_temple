@@ -1,0 +1,257 @@
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #ffaf6d, #ffcc80);
+  color: #7d080c;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #8d0707;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #540101;
+}
+
+
+/* Main About */
+.aboutMain {
+  background-color: #fbf6e5; 
+  text-align: center;
+  padding: 40px 0;
+  padding-bottom: 60px;
+}
+
+.aboutMain h2 {
+  color: #245b2e; 
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.aboutImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.aboutImageContainer img {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 64, 0, 0.1);
+}
+
+.aboutMain p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+/* History Section */
+.historySection {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  gap: 110px;
+  padding: 60px 8%;
+  background-color: rgb(84 118 25 / 70%); 
+  flex-wrap: wrap;
+}
+
+.historyImageContainer {
+  /*flex: 1; */
+  display: flex;
+  justify-content: center;
+}
+
+.historyImage {
+  /*width: 90%; */
+  width: 300px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.historyContent {
+  /*flex: 1; */
+  color: white;
+  max-width: 800px;
+}
+
+.historyHeading {
+  color: #800000; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.historyContent p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+
+/* Diety Section */
+.deitySection {
+  display: block;
+  text-align: center;
+  padding: 40px 8%;
+  background-color: #fffdf6;
+}
+
+.deityHeading {
+  color: #800000; 
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+
+/* Timings  Section */
+.timingsSection {
+  background-color: #fff8e1;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+.timingsMainHeading {
+  color: #006400;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.timingsContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timingsSubHeading {
+  color: maroon;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.timingsText {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.timingsNote {
+  color: #555;
+  font-style: italic;
+  text-align: left;
+}
+
+
+/* Blessings  Section */
+.blessingSection {
+  width: 100%;
+  text-align: center;
+}
+
+.blessingQuote {
+  background-color: #7a983e;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  padding: 30px 12px;
+}
+
+.blessingImageWrap {
+  background-color: #800000; 
+  width: 100%;
+}
+
+.blessingImage {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover; 
+}
+
+
+/* Footer Section */
+.footer {
+  background-color: #0b3d2e;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footerSection h3 {
+  color: #f5deb3; 
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footerSection p,
+.footerSection ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footerSection ul li:hover {
+  color: #f5deb3;
+}
+
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid #f5deb3;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+
