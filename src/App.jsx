@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About, Home, Darshan, Events, Seva, Donate, Contact, Login } from './pages'
+import { About, Home, Darshan, Events, Seva, Donate, Contact, Login, Dashboard } from './pages'
 import './App.css' 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </>

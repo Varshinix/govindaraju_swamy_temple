@@ -1,0 +1,903 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #ffaf6d, #ffcc80);
+  color: #7d080c;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* (Desktop) Nav Links */
+.navLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #8d0707;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #540101;
+}
+
+/* Hamburger (Hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: #8d0707;
+  border-radius: 2px;
+}
+
+/* Profile */
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileCircle {
+  width: 36px;
+  height: 36px;
+  background-color: #8d0707;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.username {
+  font-weight: 600;
+  color: #7d080c;
+}
+
+
+/* Sidebar */
+.dashboardContainer {
+  display: flex;
+  height: calc(100vh - 67px);
+  margin-top: 0;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fffaf3;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5e8d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 2px solid #e0c9a6;
+}
+
+.sidebarTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #800000;
+  margin-bottom: 30px;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #155e2d;
+  font-weight: 500;
+}
+
+.menuItem:hover {
+  background-color: #f0dfb7;
+}
+
+.active {
+  background-color: #f5deb3;
+  color: #8d0707;
+  font-weight: 600;
+}
+
+.logoutSection {
+  margin-top: auto;
+  text-align: center;
+}
+
+.logoutButton {
+  background-color: #155e2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #004d26;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff8e7;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #155e2d;
+  margin-bottom: 10px;
+}
+
+.pageDescription {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* Rightside */
+.aboutSection {
+  text-align: center;
+}
+
+.aboutImage {
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* history */
+.historySection {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fdf7e4;
+  color: #3b3a2a;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.historyContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.historyCard {
+  background-color: #fff9f4;
+  border-left: 6px solid maroon;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 90%;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.historyCard:hover {
+  transform: translateY(-4px);
+}
+
+.cardTitle {
+  color: #8d0707;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.cardDetail {
+  color: #2e4a2f;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+
+/* Darshan Tickets */
+.bookTicketSection {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bookTicketContainer {
+  background-color: #800000;
+  color: #f8f3e1;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+}
+
+.bookTicketContainer h2 {
+  font-size: 2.3rem;
+  color: #ffe7b3;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.openBtn {
+  background-color: #0a3d2e;
+  color: #f8f3e1;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.openBtn:hover {
+  background-color: #0d533e;
+  transform: scale(1.03);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #407e14de;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalContent h3 {
+  text-align: center;
+  color: #800000;
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #800000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookingForm label {
+  font-weight: 600;
+  color: #fff8e1;
+}
+
+.bookingForm input,
+.bookingForm select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.bookingForm button {
+  background-color: #800000;
+  color: #fff9f0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.bookingForm button:hover {
+  background-color: #a32020;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Book Seva */
+.bookSevaContainer {
+  padding: 3rem 2rem;
+  background-color: #fffaf3;
+  min-height: calc(100vh - 80px);
+  text-align: center;
+}
+
+.title {
+  color: #800000;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #3b3b3b;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.sevaForm {
+  background-color: #fdf6ec;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(128, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #800000;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: #004b23;
+  margin-bottom: 0.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #c9b88f;
+  border-radius: 8px;
+  background-color: #fffdf7;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #800000;
+  box-shadow: 0 0 5px rgba(128, 0, 0, 0.2);
+}
+
+.submitBtn {
+  background-color: #800000;
+  color: #fffaf3;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #b22222;
+}
+
+
+/* donations */
+.donationsContainer {
+  background-color: #fffaf3;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+
+.title {
+  color: #155e2d;
+  font-size: 1.9rem;
+  margin-bottom: 6px;
+}
+
+.subtitleSmall {
+  color: #3b3b3b;
+  font-size: 0.98rem;
+  margin-bottom: 1.6rem;
+}
+
+.donationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+.cardSimple {
+  background: #fffdf7;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #e9dcc0;
+}
+
+.cardHeader {
+  font-weight: 700;
+  color: #155e2d;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.donateBtn {
+  background-color: #800000;
+  color: #fffaf3;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s;
+}
+
+.donateBtn:hover {
+  background-color: #b22222;
+  transform: translateY(-2px);
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  padding: 18px;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 420px;
+  background: #407e14f2;
+  padding: 22px;
+  padding-right: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  position: relative;
+  border: 1px solid #e6d8bb;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #800000;
+  cursor: pointer;
+}
+
+.modalTitle {
+  color: #800000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.simpleForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.simpleForm label {
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.simpleForm input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d9cdb0;
+  outline: none;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.confirmBtn {
+  margin-top: 8px;
+  background-color: #8d0707;
+  color: #fffaf3;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirmBtn:hover {
+  background-color: #800000;
+}
+
+
+/* e-Hundi */
+.ehundiSection {
+  background: linear-gradient(to right, #fff8e7, #fdf6ec);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #3b2f2f;
+}
+
+.heading {
+  color: #8b0000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.ehundiContainer {
+  background-color: #fff;
+  border: 2px solid #8b0000;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.15);
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.inputBox input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #8b0000;
+  border-radius: 8px;
+  width: 60%;
+  font-size: 1rem;
+  outline: none;
+  color: #3b2f2f;
+}
+
+.inputBox input:focus {
+  border-color: #006400;
+}
+
+.donateBtn {
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.donateBtn:hover {
+  background-color: #0a3d2e;
+  transform: scale(1.05);
+}
+
+.footerText {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+.updatesSection {
+  padding: 2rem;
+  background-color: #fffaf2;
+  color: #2c3e1f;
+  text-align: center;
+}
+
+.heading {
+  color: #800000;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.updatesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.updateCard {
+  background: #f9f1e7;
+  border: 1px solid #b22222;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.updateCard:hover {
+  transform: translateY(-5px);
+  background-color: #fff5eb;
+}
+
+.updateTitle {
+  color: #004d00;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.updateDate {
+  color: #800000;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.updateDetail {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+/* Latest Updates */
+
+.updatesSection {
+  padding: 2rem;
+  background-color: #fffaf2;
+  color: #2c3e1f;
+  text-align: center;
+}
+
+.heading {
+  color: #800000;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.updatesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.updateCard {
+  background: #f9f1e7;
+  border: 1px solid #b22222;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.updateCard:hover {
+  transform: translateY(-5px);
+  background-color: #fff5eb;
+}
+
+.updateTitle {
+  color: #004d00;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.updateDate {
+  color: #800000;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.updateDetail {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+
+
+
+/*  TAB VERSION */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #8d0707;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background: #fff8f0;
+    /*width: 100%;
+    right: 0; */
+    padding: 20px 0;
+    text-align: center;
+    gap: 20px;
+    border-top: 2px solid #8d0707;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+
+  .navLinks.active {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .navLinks a {
+    font-size: 1.2rem;
+    color: #8d0707;
+    font-weight: 600;
+  }
+
+  .navLinks a:hover {
+    color: #540101;
+  }
+
+  /* history */
+  .historyContent {
+    grid-template-columns: 1fr;
+  }
+
+  /* donations */
+  .donationGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cardSimple {
+    padding: 14px;
+  }
+
+  /* e-hundi */
+  .ehundiContainer {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .inputBox {
+    flex-direction: column;
+  }
+
+  .inputBox input {
+    width: 100%;
+  }
+
+  .donateBtn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .updatesSection {
+    padding: 1rem;
+  }
+
+  .updateCard {
+    padding: 0.8rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+}

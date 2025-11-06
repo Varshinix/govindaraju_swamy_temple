@@ -1,0 +1,130 @@
+.loginSection {
+    background-color: #fff7e6;
+    padding: 40px 20px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* prevent scroll */
+    position: fixed;
+    /* lock to screen */
+    top: 0;
+    left: 0;
+}
+
+.loginCard {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 850px;
+    width: 100%;
+}
+
+.imageContainer {
+    flex: 1;
+    background-color: #fff0d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formContainer {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #800000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputGroup label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.loginButton {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.loginButton:hover {
+    background-color: #a00000;
+}
+
+.registerText {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.registerText a {
+    color: #800000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.registerText a:hover {
+    text-decoration: underline;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .loginCard {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .imageContainer {
+        display: none;
+        /* hide image on small screens */
+    }
+
+    .formContainer {
+        padding: 30px 20px;
+    }
+}

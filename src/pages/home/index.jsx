@@ -112,7 +112,7 @@ export default function Home() {
             <nav className={styles.navbar}>
                 <div className={styles.logo}>🛕 Govindaraja Swamy Temple</div>
 
-                {/* Hamburger (only shows on mobile) */}
+                {/* Hamburger */}
                 <div
                     className={styles.hamburger}
                     onClick={() => setMenuOpen(!menuOpen)}

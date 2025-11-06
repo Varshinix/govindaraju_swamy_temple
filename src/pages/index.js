@@ -7,6 +7,7 @@ import Seva from "./seva";
 import Donate from "./donate";
 import Contact from "./contact";
 import Login from "./login";
+import Dashboard from "./dashboard";
 
 export {
     Home,
@@ -16,5 +17,6 @@ export {
     Seva,
     Donate,
     Contact,
-    Login
+    Login,
+    Dashboard
 }
