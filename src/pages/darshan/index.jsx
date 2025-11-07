@@ -10,6 +10,8 @@ import curdRiceImg from "../../assets/curd_rice.jpg";
 export default function Darshan() {
     const navigate = useNavigate();
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const [showForm, setShowForm] = useState(false);
 
     const handleOpen = () => setShowForm(true);
@@ -20,41 +22,32 @@ export default function Darshan() {
             {/* Navbar */}
             <nav className={styles.navbar}>
                 <div className={styles.logo}>🛕 Govindaraja Swamy Temple</div>
-                <ul className={styles.navLinks}>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/");
-                    }}>Home</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/about");
-                    }}>About</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/darshan");
-                    }}>Darshan</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/events");
-                    }}>Events</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/seva");
-                    }}>Seva</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/donate");
-                    }}>Donate</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/contact");
-                    }}>Contact</a></li>
-                    <li><a href="#" onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/login");
-                    }}>Login</a></li>
+
+                {/* Hamburger */}
+                <div
+                    className={styles.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <ul
+                    className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}
+                    onClick={() => setMenuOpen(false)} // closes menu when any link is clicked
+                >
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/"); }}>Home</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/about"); }}>About</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/darshan"); }}>Darshan</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/events"); }}>Events</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/seva"); }}>Seva</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/donate"); }}>Donate</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}>Contact</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); navigate("/login"); }}>Login</a></li>
                 </ul>
             </nav>
+
 
 
             {/* Hero */}
@@ -157,7 +150,7 @@ export default function Darshan() {
                         </tr>
                     </tbody>
                 </table>
-            </section> 
+            </section>
 
 
             {/* Book Tickets Section*/}

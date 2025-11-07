@@ -807,7 +807,7 @@ body {
     gap: 20px;
     border-top: 2px solid #8d0707;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100vw; 
+    width: 100%; 
     left: 0;
     right: 0;
     overflow-x: hidden;
